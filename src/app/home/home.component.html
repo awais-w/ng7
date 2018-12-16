@@ -1,0 +1,16 @@
+<h1 [class.green]="!h1Style">HOME</h1>
+<!-- <h2 [ngStyle]="{
+  'color':'green',
+  'font-size':'4em'
+}"> Style check </h2>
+<h2 [ngClass]="h1Style ? 'green' : 'purple'"> Just checking </h2> -->
+<!-- <button (click)="firstClick()">CLick me!</button> -->
+
+
+<ul *ngIf="users">
+  <li *ngFor = "let user of users.data">
+    <img [src]="user.avatar" />
+    <p>{{ user.first_name }} {{ user.last_name }}</p>
+  </li>
+</ul>
+
